@@ -1,6 +1,4 @@
-
-
-<?php 
+<?php
 
 $hotels = [
 
@@ -45,11 +43,13 @@ $hotels = [
 
 
 <ul>
-<?php foreach ($hotels as $singleHotel) { ?>
-    <li>
-    <?php echo "$singleHotel"; ?>
-    </li>
+    <?php foreach ($hotels as $singleHotel) { ?>
+        <li>
+            <?php echo $singleHotel['name']; ?>
+            <?php echo $singleHotel['description']; ?>
+            <?php echo $singleHotel['parking']; ?>
+            <?php echo $singleHotel['vote']; ?>
+            <?php echo $singleHotel['distance_to_center']; ?>
+        </li>
     <?php } ?>
 </ul>
-
-
