@@ -61,33 +61,43 @@ $hotels = [
 
 
 <body>
-    <h1>
-        PHP HOTEL
-    </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
 
-    <table class="table table-success table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Parking</th>
-                <th scope="col">Vote</th>
-                <th scope="col">Distance to center</th>
-            </tr>
-        </thead>
+                <h1>
+                    PHP HOTEL
+                </h1>
 
-        <tbody>
-            <?php foreach ($hotels as $singleHotel) { ?>
-                <tr>
-                    <th scope="row"><?php echo $singleHotel['name']; ?> </th>
-                    <td><?php echo $singleHotel['description']; ?></td>
-                    <td><?php echo $singleHotel['parking']; ?></td>
-                    <td><?php echo $singleHotel['vote']; ?></td>
-                    <td> <?php echo $singleHotel['distance_to_center']; ?></td>
-                </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+                <table class="table table-success table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Parking</th>
+                            <th scope="col">Vote</th>
+                            <th scope="col">Distance to center</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <?php foreach ($hotels as $singleHotel) { ?>
+                            <tr>
+                                <th scope="row"><?php echo $singleHotel['name']; ?> </th>
+                                <td><?php echo $singleHotel['description']; ?></td>
+                                <td><?php echo $singleHotel['parking']; ?></td>
+                                <td><?php echo $singleHotel['vote']; ?></td>
+                                <td> <?php echo $singleHotel['distance_to_center']; ?></td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
 
     <script src="" async defer></script>
 </body>
