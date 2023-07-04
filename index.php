@@ -42,35 +42,54 @@ $hotels = [
 ?>
 
 
-<ul>
-    <?php foreach ($hotels as $singleHotel) { ?>
-        <li>
-            <?php echo $singleHotel['name']; ?>
-            <?php echo $singleHotel['description']; ?>
-            <?php echo $singleHotel['parking']; ?>
-            <?php echo $singleHotel['vote']; ?>
-            <?php echo $singleHotel['distance_to_center']; ?>
-        </li>
-    <?php } ?>
-</ul>
+
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        //* bootstrap
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PHP HOTEL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
-    <body>
-        
-        <script src="" async defer></script>
-    </body>
+<body>
+    <h1>
+        PHP HOTEL
+    </h1>
+
+    <table class="table table-success table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Parking</th>
+                <th scope="col">Vote</th>
+                <th scope="col">Distance to center</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <?php foreach ($hotels as $singleHotel) { ?>
+                <tr>
+                    <th scope="row"><?php echo $singleHotel['name']; ?> </th>
+                    <td><?php echo $singleHotel['description']; ?></td>
+                    <td><?php echo $singleHotel['parking']; ?></td>
+                    <td><?php echo $singleHotel['vote']; ?></td>
+                    <td> <?php echo $singleHotel['distance_to_center']; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+
+    <script src="" async defer></script>
+</body>
+
 </html>
