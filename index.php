@@ -100,12 +100,13 @@ $hotels = [
             <div class="col-12">
                 <form>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="parking">
                         <label class="form-check-label" for="flexCheckDefault">
                             Parking
                         </label>
                     </div>
-                    <button type="button" class="btn  btn-success">Search</button>
+
+                    <button type="submit" class="btn  btn-success">Search</button>
                 </form>
             </div>
         </div>
